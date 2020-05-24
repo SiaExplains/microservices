@@ -1,8 +1,10 @@
 # microservices
+
 implementing microservices architecture based on my experiences and best practices.
+
 <hr />
 
-I used these following technologies in this project:
+I used these following technologies in this project: <br />
 `docker`, `docker-compose`, `node`, `nginx`, `mongodb`
 
 <hr />
@@ -10,7 +12,6 @@ I used these following technologies in this project:
 Martin Fowler qoute about Microservices:
 
 "is an approach to developing a single application as a set of small services, eaching runnig in its own process and communicating with lightweight mechanism. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centeralized management of these services, which may wrriten in different programming languages and use different data storage technologies."
-
 
 Characteristics:
 
@@ -21,7 +22,6 @@ Characteristics:
 -   Data Storage & Management is decentralized
 -   Infrastructure is automated and often virtualized
 -   Services are desgined for failure tolorent and scalability
-
 
 ### Advantanges
 
@@ -37,6 +37,11 @@ Characteristics:
 -   Distributed systems are harder to develop (remote calls are slow and always at risk of failure)
 -   transactional process and difficult to manage consistency
 -   Opertional complexcity: needs a mature team to manage lots of services, which need to deplying regularly
+
+### Patterns, Rules and Standards
+
+-   Make a common libary (like npm libary) for shared entities (like models)
+-   Using versioning (/api/v1 | /api/v2) for backward compatiable
 
 ### Anti Patterns!
 
