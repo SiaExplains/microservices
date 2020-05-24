@@ -13,6 +13,10 @@ Martin Fowler qoute about Microservices:
 
 "is an approach to developing a single application as a set of small services, eaching runnig in its own process and communicating with lightweight mechanism. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centeralized management of these services, which may wrriten in different programming languages and use different data storage technologies."
 
+Microservices is like music orchestration!
+
+<hr />
+
 Characteristics:
 
 -   Application componentization through independent services
@@ -42,7 +46,10 @@ Characteristics:
 
 -   Make a common libary (like npm libary) for shared entities (like models)
 -   Using versioning (/api/v1 | /api/v2) for backward compatiable
+-   it very important to have the 1 hop rule or
+    a message queue for all service to service communication.
 
 ### Anti Patterns!
 
 -   Use Microservices in small projects (remove ants with nuclear bomb)
+-   circular dependecy in micro-services
